@@ -2,6 +2,7 @@ import Form from './components/Form';
 import './App.css';
 import {ReactComponent as Wave} from './wave.svg';
 import Header from './components/Header';
+import Description from './components/Description';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <div className="header">
         <Header />
       </div>
+      <Description />
       <div className="container">
         <div className="App">
           <Form />

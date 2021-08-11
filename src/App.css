@@ -1,3 +1,7 @@
+.surfretreat {
+  overflow-x: hidden;
+}
+
 .container {
   position: relative;
   display: flex;
@@ -19,7 +23,6 @@
   display: flex;
   place-items: end;
 }
-
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

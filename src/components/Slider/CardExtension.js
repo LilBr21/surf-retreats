@@ -9,7 +9,7 @@ let portugalExtension = {
 }
 
 let costaRicaExtension = {
-    extname: 'Portugal, Peniche',
+    extname: 'Costa Rica',
     extdesc: 'sth shit',
     accomodation: 'sth',
     prices: '$$$',

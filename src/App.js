@@ -4,6 +4,7 @@ import {ReactComponent as Wave} from './wave.svg';
 import Header from './components/Header';
 import Description from './components/Description';
 import DestinationSlider from './components/Slider/DestinationSlider';
+import Faq from './components/Faq';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <div className='choosedestination'>
         <DestinationSlider />
       </div>
+      <Faq />
       <div className="container">
         <div className="App">
           <Form />

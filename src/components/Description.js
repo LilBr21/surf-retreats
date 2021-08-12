@@ -49,6 +49,7 @@ const Description = () => {
                 </div>
             </div>
             <p>And many more...</p>
+            <h2 className="sectitle">Destinations:</h2>
         </div>
 
         //<a href="https://icons8.com/icon/6dL6OzXlCkqV/country-house">Country House icon by Icons8</a>

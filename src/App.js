@@ -3,7 +3,7 @@ import './App.css';
 import {ReactComponent as Wave} from './wave.svg';
 import Header from './components/Header';
 import Description from './components/Description';
-import DestinationSlider from './components/DestinationSlider';
+import DestinationSlider from './components/Slider/DestinationSlider';
 
 function App() {
   return (

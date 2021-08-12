@@ -36,6 +36,7 @@
     background-color: rgb(233, 72, 104);
     color: #fff;
     font-size: 17px;
+    cursor: pointer;
 }
 
 .form-btn:hover {

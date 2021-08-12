@@ -1,6 +1,7 @@
 .next-button, .prev-button{
     height: 45px;
     width: 45px;
+    border: none;
     border-radius: 50%;
     margin-left: 1.5rem;
     margin-right: 1.5rem;

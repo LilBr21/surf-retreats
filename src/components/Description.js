@@ -20,6 +20,13 @@ const Description = () => {
                     />
                 </div>
                 <div className="box">
+                    <p>Small groups</p>
+                    <img 
+                        src="https://img.icons8.com/ios/50/000000/conference-call--v1.png" 
+                        alt="group"
+                    />
+                </div>
+                <div className="box">
                     <p>Accomodation</p>
                     <img 
                         src="https://img.icons8.com/ios/50/000000/country-house.png" 

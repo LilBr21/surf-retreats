@@ -12,7 +12,9 @@ function App() {
         <Header />
       </div>
       <Description />
-      <DestinationSlider />
+      <div className='choosedestination'>
+        <DestinationSlider />
+      </div>
       <div className="container">
         <div className="App">
           <Form />

@@ -1,7 +1,10 @@
 .next-button, .prev-button{
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    background-color: #a26576;
+    color: #fff;
+    cursor: pointer;
 }

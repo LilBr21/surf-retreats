@@ -15,6 +15,11 @@ const DestinationCard = (props) => {
         setExtensionIsShown(true);
     };
 
+    const hideExtensionHandler = () => {
+        setCardIsShown(true);
+        setExtensionIsShown(false);
+    };
+
     return (
         <div>
             {cardIsShown ? <div className="card">
@@ -24,7 +29,7 @@ const DestinationCard = (props) => {
                 <button className="card-btn" onClick={showExtensionHandler}>Click for more info</button>
             </div> : null}
             <div className="extension">
-                {extensionIsShown ? <CardExtension chosenplace={props.chosenplace}/> : null}
+                {extensionIsShown ? <CardExtension onHideExtensionHandler={hideExtensionHandler} chosenplace={props.chosenplace}/> : null}
             </div>
         </div>
     )

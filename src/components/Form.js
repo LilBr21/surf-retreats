@@ -74,8 +74,7 @@ const Form = () => {
                 <label className="label" htmlFor="name">Name:</label>
                 <input 
                     className="input" 
-                    type="text" 
-                    placeholder="Name:" 
+                    type="text"
                     id="name"
                     onChange={nameChangeHandler}
                     onBlur={nameBlurHandler}
@@ -115,10 +114,10 @@ const Form = () => {
                     <option value="panama">Panama</option>
                     <option value="morocco">Morocco</option>
                 </select>
-                {nameInputHasError && (<p>Name must not be empty</p>)}
-                {surnameInputHasError && (<p>Surname must not be empty</p>)}
-                {emailHasError && (<p>Please enter correct email</p>)}
-                {phoneHasError && (<p>Please enter correct phone number</p>)}
+                {nameInputHasError && (<p className="validation-msg">Name must not be empty</p>)}
+                {surnameInputHasError && (<p className="validation-msg">Surname must not be empty</p>)}
+                {emailHasError && (<p className="validation-msg">Please enter correct email</p>)}
+                {phoneHasError && (<p className="validation-msg">Please enter correct phone number</p>)}
                 {isSubmitted && (<p>Form is submitted!</p>)}
                 <button 
                     className="form-btn" 

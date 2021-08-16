@@ -40,10 +40,15 @@ let extendedInfo = [
 ];
 
 const CardExtension = (props) => {
+    const hideExtension = (event) => {
+        event.preventDefault();
+        props.onHideExtensionHandler();
+    }
+
     return (
         <div className="extended-card">
             <div className="top-line">
-                <p className="closing-cross">+</p>
+                <p onClick={hideExtension} className="closing-cross">+</p>
                 <h2 className="extended-title">{extendedInfo[props.chosenplace].extname}</h2>
             </div>
             <h4>Basic info:</h4>

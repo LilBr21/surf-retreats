@@ -9,7 +9,7 @@ let portugalExtension = {
 }
 
 let costaRicaExtension = {
-    extname: 'Costa Rica',
+    extname: 'Costa Rica, Salsa Brava',
     extdesc: "Experience Costa Rica's tropical chill vibe with us. We normally stay in the south part which guarantees the best and longest left waves we've ever surfed. Long sandy beaches are waiting for you.",
     accomodation: 'In costa rica we stay in bungalows near the beach. That means that it takes about a minute walking to go surfing and there are beautiful sunsets to watch from our terrace. In Costa Rica we provide only shared accomodation (4 - 6 persons in one room).',
     prices: '1050$',
@@ -17,19 +17,19 @@ let costaRicaExtension = {
 }
 
 let panamaExtension = {
-    extname: 'Portugal, Peniche',
-    extdesc: 'sth shit',
-    accomodation: 'sth',
-    prices: '$$$',
-    dates: '249458'
+    extname: 'Panama, Bocas del Torro',
+    extdesc: "In Panama the waves are made for surfing. We'll be staying near Bocas del Torro. Come with us and enjoy the lack of crowds on long sandy beaches. This is the perfect place to try other activities like snorkelling.",
+    accomodation: 'In Panama we offer you a stay in bungalows placed near the beach. You can choose between a private room and shared dorms. All the rooms have private bathroom and an AC.',
+    prices: '890$ / 1200$',
+    dates: '03.12.2021 - 10.12.2021, 24.01.2022 - 30.01.2022, 31.01.2022 - 06.02.2022'
 }
 
 let morrocoExtension = {
-    extname: 'Portugal, Peniche',
-    extdesc: 'sth shit',
-    accomodation: 'sth',
-    prices: '$$$',
-    dates: '249458'
+    extname: 'Morocco, Taghazout',
+    extdesc: "In Morocco you'll experience the longest waves of your life. The sun is shining almost everyday. In the area there are many great spots and we'll make sure to take you to the best ones depending on the conditions.",
+    accomodation: 'In Morocco we offer you a stay in our surf hostel. There are private rooms as well as shared dorms. After classess enjoy the ocean view from our rooftop terrace.',
+    prices: '690$ / 800$',
+    dates: '20.09.2021 - 26.09.2021, 11.10.2021 - 17.10.2021, 16.05.2022 - 22.05.2022'
 }
 
 let extendedInfo = [

@@ -5,6 +5,10 @@
     margin: 4rem 1.5rem auto 1.5rem;
 }
 
+.destinations-mobile {
+    display: none;
+}
+
 @media (max-width: 480px) {
     .destinations {
         display: flex;

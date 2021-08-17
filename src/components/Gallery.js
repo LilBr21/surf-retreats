@@ -39,6 +39,13 @@ const Gallery = () => {
                     ))}
                 </Slider>
             </div>
+            <div className="gallery-mobile">
+                {gallerypics.map((img) => (
+                    <div>
+                        <img className="mobile-pics" src={img} alt="retreats gallery pictures"/>
+                    </div>
+                ))}
+            </div>
             <DecorationWave />
         </div>
     )

@@ -1,0 +1,16 @@
+.bookings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookings-description {
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bookings-title {
+    font-family: Poppins;
+}

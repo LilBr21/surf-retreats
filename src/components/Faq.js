@@ -42,7 +42,7 @@ const Faq = () => {
 
     return (
         <div className="faq-container">
-            <h3>FAQ:</h3>
+            <h3 className="faq-title">FAQ:</h3>
             <div className="question" onClick={showFirstAnswerHandler}>
                 <h4>Do I need to know how to swim to join a retreat?</h4>
                 {firstAnswerIsShown ? <p className="faq-answer">

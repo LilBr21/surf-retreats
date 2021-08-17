@@ -1,34 +1,15 @@
-// import Slider from "react-slick";
 import DestinationCard from './DestinationCard';
-// import NextArrow from './NextArrow';
-// import PrevArrow from './PrevArrow';
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import './DestinationSlider.styles.css';
 
-import portugalpic from '../../portugal-surf.jpg';
-import costaricapic from '../../costa-rica-surf.jpg';
-import panamapic from '../../panama-surf.jpg';
-import moroccopic from '../../morocco-surf.jpg';
+import portugalpic from '../../assets/portugal-surf.jpg';
+import costaricapic from '../../assets/costa-rica-surf.jpg';
+import panamapic from '../../assets/panama-surf.jpg';
+import moroccopic from '../../assets/morocco-surf.jpg';
 
 const DestinationSlider = () => {
-    // const [destinationIndex, setDestinationIndex] = useState(0);
-
-    // let settings = {
-    //     dots: true,
-    //     infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     centerMode: true,
-    //     nextArrow: <NextArrow />,
-    //     prevArrow: <PrevArrow />,
-    //     // beforeChange: (current, next) => setDestinationIndex(next)
-    // }; 
-
-    // console.log(destinationIndex);
-
     return (
             <div className="destinations">
                 <DestinationCard

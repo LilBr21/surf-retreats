@@ -6,6 +6,7 @@ import Description from './components/Description';
 import DestinationSlider from './components/Slider/DestinationSlider';
 import Gallery from './components/Gallery';
 import Faq from './components/Faq';
+import Bookings from './components/Bookings';
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
       </div>
       <Gallery />
       <Faq />
+      <Bookings />
       <div className="container">
-        <div className="App">
+        <div className="form-part">
           <Form />
         </div>
         <div className="wave">

@@ -2,6 +2,8 @@ import Slider from "react-slick";
 import NextArrow from './Slider/NextArrow';
 import PrevArrow from './Slider/PrevArrow';
 
+import {ReactComponent as BreakIcon} from '../assets/break-icon.svg';
+
 import gallerypic1 from '../assets/austin-neill-uHD0uyp79Dg-unsplash.jpg';
 import gallerypic2 from '../assets/austin-neill-Z6v4dSNayVg-unsplash.jpg';
 import gallerypic3 from '../assets/koji-futami-H5xFET9Fvlw-unsplash.jpg';
@@ -27,14 +29,20 @@ const Gallery = () => {
     };
     
     return (
-        <div className="gallery">
-            <Slider {...settings}>
-                {gallerypics.map((img) => (
-                    <div>
-                        <img src={img} alt="retreats gallery pictures"/>
-                    </div>
-                ))}
-            </Slider>
+        <div>
+            <div className="break-icons">
+                <BreakIcon />
+                <BreakIcon />
+            </div>
+            <div className="gallery">
+                <Slider {...settings}>
+                    {gallerypics.map((img) => (
+                        <div>
+                            <img src={img} alt="retreats gallery pictures"/>
+                        </div>
+                    ))}
+                </Slider>
+            </div>
         </div>
     )
 

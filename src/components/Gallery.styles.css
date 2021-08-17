@@ -2,3 +2,10 @@
     width: 60%;
     margin: 10rem auto;
 }
+
+.break-icons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3rem;
+}

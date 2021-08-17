@@ -29,7 +29,10 @@ const DestinationCard = (props) => {
                 <button className="card-btn" onClick={showExtensionHandler}>Click for more info</button>
             </div> : null}
             <div className="extension">
-                {extensionIsShown ? <CardExtension onHideExtensionHandler={hideExtensionHandler} chosenplace={props.chosenplace}/> : null}
+                {extensionIsShown ? <CardExtension 
+                    onHideExtensionHandler={hideExtensionHandler} 
+                    cardnumber={props.cardnumber}/> : null
+                }
             </div>
         </div>
     )

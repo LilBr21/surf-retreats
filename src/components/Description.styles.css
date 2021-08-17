@@ -36,3 +36,17 @@
     margin: 2.5rem 2.5rem 4.5rem 2.5rem;
     font-weight: 500;
 }
+
+@media (max-width: 480px) {
+    .sectitle {
+        text-align: center;
+    }
+
+    .opening-txt {
+        width: 70%;
+    }
+
+    .benefits {
+        flex-direction: column;
+    }
+}

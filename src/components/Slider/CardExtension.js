@@ -49,22 +49,22 @@ const CardExtension = (props) => {
         <div className="extended-card">
             <div className="top-line">
                 <p onClick={hideExtension} className="closing-cross">+</p>
-                <h2 className="extended-title">{extendedInfo[props.chosenplace].extname}</h2>
+                <h2 className="extended-title">{extendedInfo[props.cardnumber].extname}</h2>
             </div>
             <h4>Basic info:</h4>
-            <p className="basic-txt">{extendedInfo[props.chosenplace].extdesc}</p>
+            <p className="basic-txt">{extendedInfo[props.cardnumber].extdesc}</p>
             <h4>Classes:</h4>
             <p className="basic-txt">During each retreat we provide 5 days of surf classes.
                 Normally we surf about 4 hours per day and during the break there 
                 are theoretical lessons with instructors when you focus mainly on video analysys.
             </p>
             <h4>Accomodation:</h4>
-            <p className="basic-txt">{extendedInfo[props.chosenplace].accomodation}</p>
+            <p className="basic-txt">{extendedInfo[props.cardnumber].accomodation}</p>
             <h4>Price:</h4>
             <p className="basic-txt">One week retreat with 5 days of surf-classes in a shared/private room:</p>
-            <p className="price">{extendedInfo[props.chosenplace].prices}</p>
+            <p className="price">{extendedInfo[props.cardnumber].prices}</p>
             <h4>Dates of upcoming retreats:</h4>
-            <p className="basic-txt">{extendedInfo[props.chosenplace].dates}</p>
+            <p className="basic-txt">{extendedInfo[props.cardnumber].dates}</p>
             <p className="bottom-txt">
                 Feel free to ask us about possibilities to modify your stay (eg.
                 change the number of surf classes). The prices may vary depending

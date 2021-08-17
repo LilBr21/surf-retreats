@@ -23,3 +23,16 @@
     font-family: Pacifico;
     font-size: 45px;
 }
+
+@media (max-width: 480px) {
+    .headerpic {
+        background-color: #184b4e;
+        background-image: initial;
+        height: 15rem;
+    }
+
+    .title {
+        margin-top: 7.5rem;
+        font-size: 30px;
+    }
+}

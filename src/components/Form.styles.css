@@ -47,3 +47,10 @@
 .form-btn:hover {
     background-color: rgb(192, 57, 84);
 }
+
+@media (max-width: 480px) {
+    .form-wrapper {
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+}

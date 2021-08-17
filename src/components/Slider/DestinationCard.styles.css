@@ -46,3 +46,9 @@
 .card-btn:hover {
     background-color: rgb(192, 57, 84);
 }
+
+@media (max-width: 480px) {
+    .card {
+        height: 100%;
+    }
+}

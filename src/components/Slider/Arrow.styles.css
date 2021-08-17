@@ -1,4 +1,6 @@
 .next-button, .prev-button{
+    position: absolute;
+    z-index: 10;
     height: 45px;
     width: 45px;
     border: none;
@@ -8,4 +10,18 @@
     background-color: #a26576;
     color: #fff;
     cursor: pointer;
+}
+
+.next-button:hover, .prev-button:hover {
+    background-color: rgb(233, 72, 104);
+}
+
+.next-button {
+    right: 0%;
+    top: 50%;
+}
+
+.prev-button {
+    left: 0%;
+    top: 50%;
 }

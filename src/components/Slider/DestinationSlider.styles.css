@@ -1,7 +1,13 @@
-.slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    margin-top: 4rem;
+.destinations {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2;
+    margin: 4rem 1.5rem auto 1.5rem;
+}
+
+@media (max-width: 480px) {
+    .destinations {
+        display: flex;
+        flex-direction: column;
+    }
 }

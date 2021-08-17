@@ -4,6 +4,7 @@ import {ReactComponent as Wave} from './wave.svg';
 import Header from './components/Header';
 import Description from './components/Description';
 import DestinationSlider from './components/Slider/DestinationSlider';
+import Gallery from './components/Gallery';
 import Faq from './components/Faq';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <div className='choosedestination'>
         <DestinationSlider />
       </div>
+      <Gallery />
       <Faq />
       <div className="container">
         <div className="App">

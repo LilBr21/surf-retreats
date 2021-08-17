@@ -56,3 +56,13 @@
     margin-top: 3rem;
     margin-bottom: 1.5rem;
 }
+
+@media (max-width: 480px) {
+    .extended-card {
+        height: auto;
+    }
+
+    .top-line {
+        margin-top: 1.5rem;
+    }
+}

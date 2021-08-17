@@ -1,7 +1,7 @@
-import {ReactComponent as BreakIcon} from '../assets/break-icon.svg';
+import DecorationWave from './DecorationWave';
 
 import './Description.styles.css';
-import './Gallery.styles.css';
+
 
 const Description = () => {
     return (
@@ -52,10 +52,7 @@ const Description = () => {
                 </div>
             </div>
             <p>And many more...</p>
-            <div className="break-icons">
-                <BreakIcon />
-                <BreakIcon />
-            </div>
+            <DecorationWave />
             <h2 className="sectitle">Destinations:</h2>
         </div>
 

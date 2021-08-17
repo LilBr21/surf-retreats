@@ -1,8 +1,7 @@
 import Slider from "react-slick";
 import NextArrow from './Slider/NextArrow';
 import PrevArrow from './Slider/PrevArrow';
-
-import {ReactComponent as BreakIcon} from '../assets/break-icon.svg';
+import DecorationWave from './DecorationWave';
 
 import gallerypic1 from '../assets/austin-neill-uHD0uyp79Dg-unsplash.jpg';
 import gallerypic2 from '../assets/austin-neill-Z6v4dSNayVg-unsplash.jpg';
@@ -30,10 +29,7 @@ const Gallery = () => {
     
     return (
         <div>
-            <div className="break-icons">
-                <BreakIcon />
-                <BreakIcon />
-            </div>
+            <DecorationWave />
             <div className="gallery">
                 <Slider {...settings}>
                     {gallerypics.map((img) => (
@@ -43,6 +39,7 @@ const Gallery = () => {
                     ))}
                 </Slider>
             </div>
+            <DecorationWave />
         </div>
     )
 

@@ -2,6 +2,7 @@ import Form from './components/Form';
 import './App.css';
 import {ReactComponent as Wave} from './wave.svg';
 import Header from './components/Header';
+import Burger from './components/BurgerMenu/Burger';
 import Description from './components/Description';
 import DestinationSlider from './components/Slider/DestinationSlider';
 import Gallery from './components/Gallery';
@@ -15,6 +16,7 @@ function App() {
         <Header />
       </div>
       <Description />
+      <Burger />
       <div className='choosedestination'>
         <DestinationSlider />
       </div>

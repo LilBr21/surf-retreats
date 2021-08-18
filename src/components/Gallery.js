@@ -30,7 +30,7 @@ const Gallery = () => {
     return (
         <div>
             <DecorationWave />
-            <div className="gallery">
+            <div id="gallery" className="gallery">
                 <Slider {...settings}>
                     {gallerypics.map((img) => (
                         <div>

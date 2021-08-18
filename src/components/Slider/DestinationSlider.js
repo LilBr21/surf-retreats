@@ -11,7 +11,7 @@ import moroccopic from '../../assets/morocco-surf.jpg';
 
 const DestinationSlider = () => {
     return (
-            <div className="destinations">
+            <div id="destinations" className="destinations">
                 <DestinationCard
                     destination='Portugal'
                     placedescription="Explore one of the finest Europe surf spots 

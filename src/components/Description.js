@@ -5,7 +5,7 @@ import './Description.styles.css';
 
 const Description = () => {
     return (
-        <div className="description">
+        <div id="description" className="description">
             <h2 className="sectitle">It's time to begin your surf adventure!</h2>
             <p className="opening-txt">
                 Our mission is to take you to surf paradise and help you make the

@@ -4,7 +4,7 @@ import './Bookings.styles.css';
 
 const Bookings = () => {
     return (
-        <div className="bookings">
+        <div id="bookings" className="bookings">
             <DecorationWave />
             <h2 className="bookings-title">Bookings:</h2>
             <p className="bookings-description">

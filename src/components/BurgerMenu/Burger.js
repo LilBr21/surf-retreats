@@ -1,12 +1,12 @@
-import './Burger.styles.css';
+import { StyledBurger } from './Burger.styled';
 
-const Burger = () => {
+const Burger = ({ open, setOpen }) => {
     return (
-        <div className="burger">
+        <StyledBurger open={open} onClick={() => setOpen(!open)}>
             <div className="burger-part"></div>
             <div className="burger-part"></div>
             <div className="burger-part"></div>
-        </div>
+        </StyledBurger>
     )
 };
 

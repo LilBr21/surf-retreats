@@ -3,61 +3,64 @@ import { Link } from 'react-scroll';
 import { StyledMenu } from './Menu.styled';
 import { StyledLink } from './Link.styled';
 
-const Menu = () => {
+const Menu = ({open, setOpen}) => {
     return (
-        <StyledMenu>
-        <div className="menu">
+        <StyledMenu open={open}>
             <StyledLink>
-            <Link
-            to="description"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            className="link">
-                Description
-            </Link>
+                <Link
+                    to="description"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    className="link"
+                    onClick={() => setOpen(!open)}>
+                    Description
+                </Link>
             </StyledLink>
             <StyledLink>
-            <Link
-            to="destinations"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            className="link">
-                Destinations
-            </Link>
+                <Link
+                    to="destinations"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    className="link"
+                    onClick={() => setOpen(!open)}>
+                    Destinations
+                </Link>
             </StyledLink>
             <StyledLink>
-            <Link
-            to="gallery"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            className="link">
-                Gallery
-            </Link>
+                <Link
+                    to="gallery"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    className="link"
+                    onClick={() => setOpen(!open)}>
+                    Gallery
+                </Link>
             </StyledLink>
             <StyledLink>
-            <Link 
-            to="faq"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            className="link">
-                FAQ
-            </Link>
+                <Link 
+                    to="faq"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    className="link"
+                    onClick={() => setOpen(!open)}>
+                    FAQ
+                </Link>
             </StyledLink>
             <StyledLink>
-            <Link 
-            to="bookings"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            className="link">
-                Bookings
-            </Link>
+                <Link 
+                    to="bookings"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    className="link"
+                    onClick={() => setOpen(!open)}>
+                    Bookings
+                </Link>
             </StyledLink>
-        </div>
         </StyledMenu>
     )
 };

@@ -15,12 +15,6 @@ import Bookings from './components/Bookings';
 function App() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
-  const showMenuHandler = (event) => {
-    event.preventDefault();
-
-    setMenuIsOpen(true);
-  }
-
   return (
     <div className="surfretreat">
       <div className="header">
@@ -28,8 +22,8 @@ function App() {
       </div>
       <Description />
       <div>
-        <Burger onClick={showMenuHandler}/>
-        <Menu />
+        <Burger open={menuIsOpen} setOpen={setMenuIsOpen}/>
+        <Menu open={menuIsOpen} setOpen={setMenuIsOpen}/>
       </div>
       <div className='choosedestination'>
         <DestinationSlider />

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 import Form from './components/Form';
-import './App.css';
 import {ReactComponent as Wave} from './wave.svg';
 import Header from './components/Header';
 import Burger from './components/BurgerMenu/Burger';
@@ -11,6 +10,8 @@ import DestinationSlider from './components/Slider/DestinationSlider';
 import Gallery from './components/Gallery';
 import Faq from './components/Faq';
 import Bookings from './components/Bookings';
+
+import './App.css';
 
 function App() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);

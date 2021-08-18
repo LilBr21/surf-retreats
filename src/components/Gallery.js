@@ -28,9 +28,9 @@ const Gallery = () => {
     };
     
     return (
-        <div>
+        <div id="gallery">
             <DecorationWave />
-            <div id="gallery" className="gallery">
+            <div className="gallery">
                 <Slider {...settings}>
                     {gallerypics.map((img) => (
                         <div>

@@ -13,4 +13,9 @@ top: 24rem;
 right: 0;
 transition: transform 0.3s ease-out;
 transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
+
+@media (max-width: 480px) {
+    width: 100%;
+    padding: 0;
+}
 `;

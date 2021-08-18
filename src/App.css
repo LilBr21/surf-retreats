@@ -1,5 +1,7 @@
 .surfretreat {
+  position: relative;
   overflow-x: hidden;
+  
 }
 
 .container {
@@ -31,4 +33,3 @@
   place-items: end;
   width: 100%;
 }
-

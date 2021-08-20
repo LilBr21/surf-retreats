@@ -1,13 +1,22 @@
+import styled from 'styled-components';
+
 import {ReactComponent as BreakIcon} from '../assets/break-icon.svg';
 
-import './DecorationWave.styles.css';
+// import './DecorationWave.styles.css';
+
+const StyledWave = styled.div`
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3rem;
+`;
 
 const DecorationWave = () => {
     return (
-        <div className="break-icons">
+        <StyledWave>
                 <BreakIcon />
                 <BreakIcon />
-        </div>
+        </StyledWave>
     )
 }
 

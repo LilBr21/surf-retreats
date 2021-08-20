@@ -1,9 +1,10 @@
-import './Arrow.styles.css';
+
+import { StyledSliderButton } from './SliderButtons.styled';
 
 const PrevArrow = ({onClick}) => {
     return (
-        <div className="prev-arrow" onClick={onClick}>
-            <button className="prev-button">Prev</button>
+        <div onClick={onClick}>
+            <StyledSliderButton prevbutton>Prev</StyledSliderButton>
         </div>
     )
 }

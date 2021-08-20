@@ -1,13 +1,14 @@
 import { useState } from 'react';
 
+import GlobalFonts from './Fonts/Fonts';
 import Form from './components/Form';
 import {ReactComponent as Wave} from './wave.svg';
 import Header from './components/Header';
 import Burger from './components/BurgerMenu/Burger';
 import Menu from './components/BurgerMenu/Menu';
 import Description from './components/Description';
-import DestinationSlider from './components/Slider/DestinationSlider';
-import Gallery from './components/Gallery';
+import DestinationSlider from './components/Destinations/DestinationSlider';
+import Gallery from './components/Slider/Gallery';
 import Faq from './components/Faq';
 import Bookings from './components/Bookings';
 
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div className="surfretreat">
+      <GlobalFonts />
       <div className="header">
         <Header />
       </div>

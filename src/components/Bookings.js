@@ -1,18 +1,39 @@
+import styled from 'styled-components';
+
 import DecorationWave from './DecorationWave';
 
-import './Bookings.styles.css';
+const StyledBookings = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & h2 {
+        font-family: 'Poppins';
+    }
+
+    & p {
+        width: 50%;
+        font-size: 20px;
+        text-align: center;
+
+        @media (max-width: 480px) {
+            width: 70%;
+        }
+    }
+`;
 
 const Bookings = () => {
     return (
-        <div id="bookings" className="bookings">
+        <StyledBookings id="bookings">
             <DecorationWave />
-            <h2 className="bookings-title">Bookings:</h2>
-            <p className="bookings-description">
+            <h2>Bookings:</h2>
+            <p>
                 If you would like to book one of our retreats please use the 
                 form below. We'll message you as soon as possible. If you 
                 have any questions also please feel free to message us. 
             </p>
-        </div>
+        </StyledBookings>
 
     )
 }

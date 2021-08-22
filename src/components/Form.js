@@ -1,7 +1,61 @@
 import React, { useState } from 'react'
 
+import styled from 'styled-components';
+
 import useInput from '../hooks/use-input'
-import './Form.styles.css';
+
+const StyledFormWrapper = styled.div`
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    height: 100%;
+    width: 33%;
+    background: #184b4e;
+    margin-bottom: 4rem;
+    border-radius: 15px;
+
+    & form {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+
+        & label {
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        & input {
+            height: 1.5rem;
+            border-radius: 5px;
+        }
+
+        & p {
+            font-size: 15px;
+        }
+
+        & button {
+            height: 2.5rem;
+            margin-top: 2rem;
+            border-radius: 5px;
+            background-color: rgb(233, 72, 104);
+            color: #fff;
+            font-size: 17px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(192, 57, 84);
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+`;
 
 const isNotEmpty = value => value.trim() !== '';
 
@@ -69,11 +123,10 @@ const Form = () => {
     }
         
     return (
-        <div className="form-wrapper">
-            <form className="form">
-                <label className="label" htmlFor="name">Name:</label>
-                <input 
-                    className="input" 
+        <StyledFormWrapper>
+            <form>
+                <label htmlFor="name">Name:</label>
+                <input
                     type="text"
                     id="name"
                     onChange={nameChangeHandler}
@@ -82,52 +135,48 @@ const Form = () => {
                 />
                 <label className="label" htmlFor="surname">Surname:</label>
                 <input 
-                    className="input" 
                     type="text" 
                     id="surname"
                     onChange={surnameChangeHandler}
                     onBlur={surnameBlurHandler}
                     value={enteredSurname}
                 />
-                <label className="label" htmlFor="email">E-mail:</label>
-                <input 
-                    className="input" 
+                <label htmlFor="email">E-mail:</label>
+                <input
                     type="email" 
                     id="email"
                     onChange={emailChangeHandler}
                     onBlur={emailBlurHandler}
                     value={enteredEmail}
                 />
-                <label className="label" htmlFor="phoenum">Phone number:</label>
-                <input 
-                    className="input" 
+                <label htmlFor="phoenum">Phone number:</label>
+                <input
                     type="tel" 
                     id="phonenum"
                     onChange={phoneChangeHandler}
                     onBlur={phoneBlurHandler}
                     value={enteredPhoneNum}
                 />
-                <label className="label" htmlFor="destination">Destination:</label>
-                <select className="input" id="destination">
+                <label htmlFor="destination">Destination:</label>
+                <select id="destination">
                     <option value="portugal">Portugal</option>
                     <option value="costarica">Costa Rica</option>
                     <option value="panama">Panama</option>
                     <option value="morocco">Morocco</option>
                 </select>
-                {nameInputHasError && (<p className="validation-msg">Name must not be empty</p>)}
-                {surnameInputHasError && (<p className="validation-msg">Surname must not be empty</p>)}
-                {emailHasError && (<p className="validation-msg">Please enter correct email</p>)}
-                {phoneHasError && (<p className="validation-msg">Please enter correct phone number</p>)}
+                {nameInputHasError && (<p>Name must not be empty</p>)}
+                {surnameInputHasError && (<p>Surname must not be empty</p>)}
+                {emailHasError && (<p>Please enter correct email</p>)}
+                {phoneHasError && (<p>Please enter correct phone number</p>)}
                 {isSubmitted && (<p>Form is submitted!</p>)}
-                <button 
-                    className="form-btn" 
+                <button
                     type="submit" 
                     onClick={checkValidityHandler} 
                     disabled={!formIsValid}>
                     Contact us
                 </button>
             </form>
-        </div>
+        </StyledFormWrapper>
     )
 };
 

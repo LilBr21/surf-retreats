@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import headerpicture from '../headerpic.png';
+import headerpicture from '../assets/headerpic.png';
 
 const StyledHeader = styled.div`
 

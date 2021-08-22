@@ -49,7 +49,7 @@ const StyledCard = styled.div`
         font-size: 17px;
         cursor: pointer;
 
-        & :hover {
+        &:hover {
             background-color: rgb(192, 57, 84);
         }
     }

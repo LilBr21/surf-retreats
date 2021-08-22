@@ -1,4 +1,70 @@
-import './CardExtension.styles.css';
+import styled from 'styled-components';
+
+const StyledExtension = styled.div`
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 15px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    height: 600px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & p {
+        margin: 0 1rem 0.75rem 1rem;
+        text-align: justify;
+    }
+
+    & h4 {
+        align-self: center;
+    }
+
+    @media (max-width: 480px) {
+        height: auto;
+    }
+`;
+
+const StyledTopLine = styled.div`
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 15rem;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+
+    & h2 {
+        font-family: 'Pacifico';
+    }
+
+    & p {
+        position: absolute;
+        font-size: 45px;
+        transform: rotate(45deg);
+        margin-top: 0;
+        margin-right: 85%;
+        cursor: pointer;
+        &:hover {
+            color: rgb(192, 57, 84);
+        }
+    }
+
+    @media (max-width: 480px) {
+        margin-top: 1.5rem;
+    }
+`;
+
+const StyledPrice = styled.p`
+    font-weight: 400;
+`;
+
+const StyledBottomTxt = styled.p`
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+`;
 
 let portugalExtension = {
     extname: 'Portugal, Peniche',
@@ -46,32 +112,32 @@ const CardExtension = (props) => {
     }
 
     return (
-        <div className="extended-card">
-            <div className="top-line">
-                <p onClick={hideExtension} className="closing-cross">+</p>
-                <h2 className="extended-title">{extendedInfo[props.cardnumber].extname}</h2>
-            </div>
+        <StyledExtension>
+            <StyledTopLine>
+                <p onClick={hideExtension}>+</p>
+                <h2>{extendedInfo[props.cardnumber].extname}</h2>
+            </StyledTopLine>
             <h4>Basic info:</h4>
-            <p className="basic-txt">{extendedInfo[props.cardnumber].extdesc}</p>
+            <p>{extendedInfo[props.cardnumber].extdesc}</p>
             <h4>Classes:</h4>
-            <p className="basic-txt">During each retreat we provide 5 days of surf classes.
+            <p>During each retreat we provide 5 days of surf classes.
                 Normally we surf about 4 hours per day and during the break there 
                 are theoretical lessons with instructors when you focus mainly on video analysys.
             </p>
             <h4>Accomodation:</h4>
-            <p className="basic-txt">{extendedInfo[props.cardnumber].accomodation}</p>
+            <p>{extendedInfo[props.cardnumber].accomodation}</p>
             <h4>Price:</h4>
-            <p className="basic-txt">One week retreat with 5 days of surf-classes in a shared/private room:</p>
-            <p className="price">{extendedInfo[props.cardnumber].prices}</p>
+            <p>One week retreat with 5 days of surf-classes in a shared/private room:</p>
+            <StyledPrice>{extendedInfo[props.cardnumber].prices}</StyledPrice>
             <h4>Dates of upcoming retreats:</h4>
-            <p className="basic-txt">{extendedInfo[props.cardnumber].dates}</p>
-            <p className="bottom-txt">
+            <p>{extendedInfo[props.cardnumber].dates}</p>
+            <StyledBottomTxt>
                 Feel free to ask us about possibilities to modify your stay (eg.
                 change the number of surf classes). The prices may vary depending
                 on those modifications. We're sure, we're find the best possible option
                 for your stay.
-            </p>
-            </div>
+            </StyledBottomTxt>
+        </StyledExtension>
     )
 };
 

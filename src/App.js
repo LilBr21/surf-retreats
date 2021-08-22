@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import GlobalFonts from './Fonts/Fonts';
 import Form from './components/Form';
-import {ReactComponent as Wave} from './wave.svg';
+import {ReactComponent as Wave} from './assets/wave.svg';
 import Header from './components/Header';
 import Burger from './components/BurgerMenu/Burger';
 import Menu from './components/BurgerMenu/Menu';

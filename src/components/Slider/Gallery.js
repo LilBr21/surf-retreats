@@ -14,10 +14,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const StyledGallery = styled.div`
-    width: 60%;
+    width: 65%;
     margin: 10rem auto;
 
-    @media (max-width: 480px) {
+    @media (max-width: 540px) {
         display: none;
     }
 `;
@@ -25,7 +25,7 @@ const StyledGallery = styled.div`
 const StyledMobileGallery = styled.div`
     display: none;
 
-    @media (max-width: 480px) {
+    @media (max-width: 540px) {
         display: flex;
         flex-direction: column;
 

@@ -16,7 +16,7 @@ const StyledDestinations = styled.div`
     grid-template-rows: 2;
     margin: 4rem 1.5rem auto 1.5rem;
 
-    @media (max-width: 480px) {
+    @media (max-width: 540px) {
         display: flex;
         flex-direction: column;
     }

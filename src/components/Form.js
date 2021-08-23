@@ -51,8 +51,8 @@ const StyledFormWrapper = styled.div`
         }
     }
 
-    @media (max-width: 480px) {
-        width: 60%;
+    @media (max-width: 540px) {
+        width: 80%;
         margin-bottom: 1rem;
     }
 `;

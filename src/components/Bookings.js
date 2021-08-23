@@ -17,7 +17,7 @@ const StyledBookings = styled.div`
         font-size: 20px;
         text-align: center;
 
-        @media (max-width: 480px) {
+        @media (max-width: 540px) {
             width: 70%;
         }
     }

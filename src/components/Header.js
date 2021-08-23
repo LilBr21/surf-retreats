@@ -14,7 +14,7 @@ const StyledHeader = styled.div`
         url(${props => props.img});
         background-size: 100%;
     
-    @media (max-width: 480px) {
+    @media (max-width: 540px) {
         background-color: #184b4e;
         background-image: initial;
         height: 15rem;
@@ -29,7 +29,7 @@ const StyledHeader = styled.div`
         font-family: 'Pacifico';
         font-size: 45px;
 
-        @media (max-width: 480px) {
+        @media (max-width: 540px) {
             margin-top: 7.5rem;
             font-size: 30px;
         }

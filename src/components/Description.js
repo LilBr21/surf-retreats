@@ -13,7 +13,7 @@ const StyledDescription = styled.div`
         font-family: 'Poppins';
         font-size: 30px;
 
-        @media (max-width: 480px) {
+        @media (max-width: 540px) {
             text-align: center;
         }
     }   
@@ -24,7 +24,7 @@ const StyledOpening = styled.p`
     font-size: 20px;
     text-align: center;
 
-    @media (max-width: 480px) {
+    @media (max-width: 540px) {
         width: 70%;
     }
 `;
@@ -33,7 +33,7 @@ const StyledBenefits = styled.div`
     display: flex;
     flex-direction: row;
 
-    @media (max-width: 480px) {
+    @media (max-width: 540px) {
         flex-direction: column;
     }
 `;

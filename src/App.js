@@ -11,6 +11,7 @@ import DestinationSlider from './components/Destinations/DestinationSlider';
 import Gallery from './components/Slider/Gallery';
 import Faq from './components/Faq';
 import Bookings from './components/Bookings';
+import Sources from './components/Sources';
 
 import './App.css';
 
@@ -42,6 +43,7 @@ function App() {
           <Wave />
         </div>
       </div>
+      <Sources />
     </div>
   );
 }

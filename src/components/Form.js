@@ -12,7 +12,7 @@ const StyledFormWrapper = styled.div`
     height: 100%;
     width: 75%;
     background: #184b4e;
-    margin-bottom: 4rem;
+    margin-bottom: 1.5rem;
     border-radius: 15px;
 
     & form {

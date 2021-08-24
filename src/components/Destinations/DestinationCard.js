@@ -5,15 +5,25 @@ import styled from 'styled-components';
 import CardExtension from './CardExtension';
 
 const StyledCard = styled.div`
+   -webkit-box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     border-radius: 15px;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     margin-bottom: 1rem;
     height: 580px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     @media (max-width: 540px) {

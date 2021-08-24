@@ -58,7 +58,7 @@ const StyledFormWrapper = styled.div`
 
     @media (max-width: 540px) {
         width: 100%;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
     }
 `;
 

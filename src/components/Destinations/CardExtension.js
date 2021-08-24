@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const StyledExtension = styled.div`
+    -webkit-box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     border-radius: 15px;
     margin-left: 0.5rem;
@@ -8,8 +9,15 @@ const StyledExtension = styled.div`
     margin-bottom: 1rem;
     height: 600px;
     overflow: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
     & p {
@@ -18,7 +26,10 @@ const StyledExtension = styled.div`
     }
 
     & h4 {
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
         align-self: center;
+        text-align: center;
     }
 
     @media (max-width: 540px) {
@@ -27,25 +38,40 @@ const StyledExtension = styled.div`
 `;
 
 const StyledTopLine = styled.div`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     position: relative;
     margin-top: 15rem;
     width: 100%;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
     & h2 {
         font-family: 'Pacifico';
+
+        @media (max-width: 480px) {
+            font-size: 18px;
+        }
     }
 
     & p {
         position: absolute;
         font-size: 45px;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
         transform: rotate(45deg);
         margin-top: 0;
         margin-right: 85%;
         cursor: pointer;
+
         &:hover {
             color: rgb(192, 57, 84);
         }

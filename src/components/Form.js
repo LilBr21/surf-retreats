@@ -10,7 +10,7 @@ const StyledFormWrapper = styled.div`
     justify-self: center;
     justify-content: center;
     height: 100%;
-    width: 33%;
+    width: 75%;
     background: #184b4e;
     margin-bottom: 4rem;
     border-radius: 15px;
@@ -19,6 +19,7 @@ const StyledFormWrapper = styled.div`
         display: flex;
         flex-direction: column;
         color: #fff;
+        width: 16rem;
 
         & label {
             font-size: 15px;
@@ -27,9 +28,13 @@ const StyledFormWrapper = styled.div`
             margin-bottom: 0.5rem;
         }
 
-        & input {
+        & input, select, textarea {
             height: 1.5rem;
             border-radius: 5px;
+        }
+
+        & textarea {
+            height: 8rem;
         }
 
         & p {
@@ -52,7 +57,7 @@ const StyledFormWrapper = styled.div`
     }
 
     @media (max-width: 540px) {
-        width: 80%;
+        width: 100%;
         margin-bottom: 1rem;
     }
 `;
@@ -97,10 +102,19 @@ const Form = () => {
         inputBlurHandler: phoneBlurHandler,
         reset: resetPhoneInput
     } = useInput(isNotEmpty);
+
+    const {
+        value: enteredMessage,
+        isValid: messageIsValid,
+        hasError: messageHasError,
+        valueChangeHandler: messageChangeHandler,
+        inputBlurHandler: messageBlurHandler,
+        reset: resetMessageInput
+    } = useInput(isNotEmpty);
     
     let formIsValid = false;
 
-    if (nameIsValid && surnameIsValid && emailIsValid && phoneIsValid) {
+    if (nameIsValid && surnameIsValid && emailIsValid && phoneIsValid && messageIsValid) {
         formIsValid = true;
     }
 
@@ -111,7 +125,7 @@ const Form = () => {
     const checkValidityHandler = (event) => {
         event.preventDefault();
 
-        if (!nameIsValid || !surnameIsValid || !emailIsValid || !phoneIsValid) {
+        if (!nameIsValid || !surnameIsValid || !emailIsValid || !phoneIsValid || !messageIsValid) {
             return;
         }
 
@@ -119,6 +133,7 @@ const Form = () => {
         resetSurnameInput();
         resetEmailInput();
         resetPhoneInput();
+        resetMessageInput();
         setIsSubmitted(true);
     }
         
@@ -164,10 +179,19 @@ const Form = () => {
                     <option value="panama">Panama</option>
                     <option value="morocco">Morocco</option>
                 </select>
+                <label htmlFor="message">Message:</label>
+                <textarea
+                    type="text" 
+                    id="message"
+                    onChange={messageChangeHandler}
+                    onBlur={messageBlurHandler}
+                    value={enteredMessage}
+                />
                 {nameInputHasError && (<p>Name must not be empty</p>)}
                 {surnameInputHasError && (<p>Surname must not be empty</p>)}
                 {emailHasError && (<p>Please enter correct email</p>)}
                 {phoneHasError && (<p>Please enter correct phone number</p>)}
+                {messageHasError && (<p>Message must not be empty</p>)}
                 {isSubmitted && (<p>Form is submitted!</p>)}
                 <button
                     type="submit" 

@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/surf-retreats/static/css/main.e05970e1.chunk.css",
-    "main.js": "/surf-retreats/static/js/main.b1dad942.chunk.js",
-    "main.js.map": "/surf-retreats/static/js/main.b1dad942.chunk.js.map",
+    "main.js": "/surf-retreats/static/js/main.cd0c1812.chunk.js",
+    "main.js.map": "/surf-retreats/static/js/main.cd0c1812.chunk.js.map",
     "runtime-main.js": "/surf-retreats/static/js/runtime-main.9fc23374.js",
     "runtime-main.js.map": "/surf-retreats/static/js/runtime-main.9fc23374.js.map",
     "static/css/2.1ff1c8e3.chunk.css": "/surf-retreats/static/css/2.1ff1c8e3.chunk.css",
@@ -35,6 +35,6 @@
     "static/css/2.1ff1c8e3.chunk.css",
     "static/js/2.620f4cb6.chunk.js",
     "static/css/main.e05970e1.chunk.css",
-    "static/js/main.b1dad942.chunk.js"
+    "static/js/main.cd0c1812.chunk.js"
   ]
 }

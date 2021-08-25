@@ -23,7 +23,7 @@ const StyledDestinations = styled.div`
     }
 `;
 
-const DestinationSlider = () => {
+const Destinations = () => {
     return (
             <StyledDestinations id="destinations">
                 <DestinationCard
@@ -68,4 +68,4 @@ const DestinationSlider = () => {
     )
 };
 
-export default DestinationSlider;
+export default Destinations;

@@ -7,7 +7,7 @@ import Header from './components/Header';
 import Burger from './components/BurgerMenu/Burger';
 import Menu from './components/BurgerMenu/Menu';
 import Description from './components/Description';
-import DestinationSlider from './components/Destinations/DestinationSlider';
+import Destinations from './components/Destinations/Destinations';
 import Gallery from './components/Slider/Gallery';
 import Faq from './components/Faq';
 import Bookings from './components/Bookings';
@@ -30,7 +30,7 @@ function App() {
         <Menu open={menuIsOpen} setOpen={setMenuIsOpen}/>
       </div>
       <div className='choosedestination'>
-        <DestinationSlider />
+        <Destinations />
       </div>
       <Gallery />
       <Faq />

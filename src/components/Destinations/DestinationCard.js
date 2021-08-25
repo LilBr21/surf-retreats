@@ -11,7 +11,8 @@ const StyledCard = styled.div`
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     margin-bottom: 1rem;
-    height: 580px;
+    height: 700px;
+    max-height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -28,6 +29,23 @@ const StyledCard = styled.div`
 
     @media (max-width: 540px) {
         height: 100%;
+    }
+
+    & div {
+        max-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     }
 
     & h2 {
@@ -84,6 +102,7 @@ const DestinationCard = (props) => {
     return (
         <div>
             {cardIsShown ? <StyledCard>
+                <div>
                 <h2>{props.destination}</h2>
                 <p>{props.placedescription}</p>
                 <img src={props.picture} alt="portugal surf" />
@@ -91,8 +110,9 @@ const DestinationCard = (props) => {
                     onClick={showExtensionHandler}>
                     Click for more info
                 </button>
+                </div>
             </StyledCard> : null}
-            <div className="extension">
+            <div>
                 {extensionIsShown ? <CardExtension 
                     onHideExtensionHandler={hideExtensionHandler} 
                     cardnumber={props.cardnumber}/> : null

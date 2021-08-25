@@ -7,7 +7,7 @@ const StyledExtension = styled.div`
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     margin-bottom: 1rem;
-    height: 600px;
+    height: 700px;
     overflow: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -21,7 +21,7 @@ const StyledExtension = styled.div`
     justify-content: center;
 
     & p {
-        margin: 0 1rem 0.75rem 1rem;
+        margin: 0 1rem 1rem 1rem;
         text-align: justify;
     }
 
@@ -41,12 +41,11 @@ const StyledTopLine = styled.div`
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    position: relative;
-    margin-top: 15rem;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 10rem;
     width: 100%;
     -ms-flex-line-pack: center;
     align-content: center;
@@ -54,8 +53,14 @@ const StyledTopLine = styled.div`
     -ms-flex-pack: center;
     justify-content: center;
 
+    & div {
+        margin-top: 0;
+    }
+
     & h2 {
         font-family: 'Pacifico';
+        text-align: center;
+        margin-top: 0;
 
         @media (max-width: 480px) {
             font-size: 18px;
@@ -63,14 +68,13 @@ const StyledTopLine = styled.div`
     }
 
     & p {
-        position: absolute;
+        margin-top: 5rem;
         font-size: 45px;
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
-        margin-top: 0;
-        margin-right: 85%;
         cursor: pointer;
+        width: 15%;
 
         &:hover {
             color: rgb(192, 57, 84);
@@ -83,12 +87,16 @@ const StyledTopLine = styled.div`
 `;
 
 const StyledPrice = styled.p`
-    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
 `;
 
 const StyledBottomTxt = styled.p`
     margin-top: 3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-size: 14px;
 `;
 
@@ -140,8 +148,12 @@ const CardExtension = (props) => {
     return (
         <StyledExtension>
             <StyledTopLine>
-                <p onClick={hideExtension}>+</p>
-                <h2>{extendedInfo[props.cardnumber].extname}</h2>
+                <div>
+                    <p onClick={hideExtension}>+</p>
+                </div>
+                <div>
+                    <h2>{extendedInfo[props.cardnumber].extname}</h2>
+                </div>
             </StyledTopLine>
             <h4>Basic info:</h4>
             <p>{extendedInfo[props.cardnumber].extdesc}</p>

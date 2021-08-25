@@ -11,12 +11,13 @@ import panamapic from '../../assets/panama-surf.jpg';
 import moroccopic from '../../assets/morocco-surf.jpg';
 
 const StyledDestinations = styled.div`
+    display: -ms-grid;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 2;
     margin: 4rem 1.5rem auto 1.5rem;
 
-    @media (max-width: 540px) {
+    @media (max-width: 930px) {
         display: flex;
         flex-direction: column;
     }

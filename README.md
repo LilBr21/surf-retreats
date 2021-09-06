@@ -10,7 +10,7 @@ The whole page is fully responsive for mobile devices.
 # Main technologies used:
 React, Styled Components
 
-# Installation and setup inctruction:
+# Installation and setup instruction:
 Clone down this repository. You will need node and npm installed globally on your machine.
 
 Installation:
